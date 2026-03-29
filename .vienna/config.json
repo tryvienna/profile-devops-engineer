@@ -6,10 +6,11 @@
   "icon": "☁️",
   "tags": ["devops", "platform", "kubernetes", "terraform", "sre", "cloud"],
   "plugins": [
-    { "id": "linear", "requirement": "recommended", "reason": "Track incidents and infrastructure tasks with Linear" }
+    { "id": "linear", "requirement": "recommended", "reason": "Track incidents and infrastructure tasks with Linear" },
+    { "id": "profile_badge", "requirement": "recommended", "reason": "Shows the active content profile in the menu bar" }
   ],
   "skills": [
-    { "id": "getting-started", "requirement": "recommended" }
+    { "id": "platform-ops", "requirement": "recommended" }
   ],
   "quickActions": [
     { "id": "alert-triage", "requirement": "recommended" },

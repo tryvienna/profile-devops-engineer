@@ -1,13 +1,13 @@
 [
   {
-    "id": "getting-started",
-    "name": "Getting Started",
-    "description": "Introduction to using Vienna profiles — how to customize and share",
+    "id": "platform-ops",
+    "name": "Platform Ops",
+    "description": "DevOps and platform engineering — infrastructure, reliability, and incident response",
     "version": "1.0.0",
     "source": "inline",
-    "icon": "👋",
-    "category": "Onboarding",
-    "tags": ["profiles", "onboarding", "getting-started"],
+    "icon": "☁️",
+    "category": "Operations",
+    "tags": ["devops", "platform", "infrastructure", "sre"],
     "author": { "name": "Vienna Team" }
   }
 ]
