@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "name": "DevOps / Platform Engineer",
+  "description": "Quick actions and tools for DevOps engineers — alert triage, infrastructure as code, Kubernetes, incident response, and cost optimization.",
+  "author": { "name": "Vienna Team", "url": "https://tryvienna.com" },
+  "icon": "☁️",
+  "tags": ["devops", "platform", "kubernetes", "terraform", "sre", "cloud"],
+  "plugins": [
+    { "id": "linear", "requirement": "recommended", "reason": "Track incidents and infrastructure tasks with Linear" }
+  ],
+  "skills": [
+    { "id": "getting-started", "requirement": "recommended" }
+  ],
+  "quickActions": [
+    { "id": "alert-triage", "requirement": "recommended" },
+    { "id": "terraform-gen", "requirement": "recommended" },
+    { "id": "k8s-debug", "requirement": "recommended" },
+    { "id": "incident-response", "requirement": "recommended" },
+    { "id": "cloud-cost", "requirement": "recommended" }
+  ],
+  "registries": [],
+  "settings": []
+}

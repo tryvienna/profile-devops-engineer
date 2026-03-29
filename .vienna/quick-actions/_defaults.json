@@ -1,0 +1,4 @@
+{
+  "version": 1,
+  "defaults": ["alert-triage", "terraform-gen", "k8s-debug", "incident-response", "cloud-cost"]
+}

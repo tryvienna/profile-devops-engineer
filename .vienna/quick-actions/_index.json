@@ -1,0 +1,127 @@
+[
+  {
+    "id": "alert-triage",
+    "label": "Triage an alert",
+    "icon": "🚨",
+    "description": "Correlate alerts with metrics to find root cause",
+    "author": { "name": "Vienna Team" },
+    "tags": ["alerting", "monitoring", "pagerduty", "datadog"],
+    "options": [
+      {
+        "id": "alert-correlate",
+        "label": "Correlate alert with metrics",
+        "prompt": "I have an alert firing — I'll describe it. Help me correlate it with recent deployments, metric changes, and related alerts to identify the root cause. Walk me through the investigation step by step."
+      },
+      {
+        "id": "alert-runbook",
+        "label": "Generate a runbook for this alert",
+        "prompt": "Create a runbook for the alert I'll describe. Include: what the alert means, likely causes ranked by probability, diagnostic steps with specific commands, remediation steps, and escalation criteria. Format it for quick scanning during an incident."
+      },
+      {
+        "id": "alert-silence",
+        "label": "Is this alert noise?",
+        "prompt": "Help me evaluate whether this alert is actionable or noise. Check: has it fired before? What was the outcome? Is the threshold too sensitive? Should we adjust the alert, add a filter, or suppress it during certain windows?"
+      }
+    ]
+  },
+  {
+    "id": "terraform-gen",
+    "label": "Generate Terraform",
+    "icon": "🏗️",
+    "description": "Infrastructure as Code module generation and review",
+    "author": { "name": "Vienna Team" },
+    "tags": ["terraform", "iac", "infrastructure"],
+    "options": [
+      {
+        "id": "terraform-module",
+        "label": "Generate a Terraform module",
+        "prompt": "Generate a Terraform module for the infrastructure I'll describe. Include: resource definitions, variables with descriptions and validation, outputs, and a README with usage examples. Follow our existing module patterns and naming conventions."
+      },
+      {
+        "id": "terraform-review",
+        "label": "Review a Terraform plan",
+        "prompt": "Review this Terraform plan output. Identify: destructive changes (resource replacements or deletions), security concerns (open ports, public access), cost implications, and missing best practices (tagging, encryption, backups)."
+      },
+      {
+        "id": "terraform-migrate",
+        "label": "Migrate existing infra to Terraform",
+        "prompt": "Help me import existing infrastructure into Terraform. I'll describe what exists — generate the resource definitions, import commands, and a migration plan that avoids downtime. Include state management considerations."
+      }
+    ]
+  },
+  {
+    "id": "k8s-debug",
+    "label": "Debug Kubernetes",
+    "icon": "☸️",
+    "description": "Troubleshoot pods, deployments, and cluster issues",
+    "author": { "name": "Vienna Team" },
+    "tags": ["kubernetes", "k8s", "containers", "debugging"],
+    "options": [
+      {
+        "id": "k8s-pods",
+        "label": "Why are pods crashing?",
+        "prompt": "Help me debug crashing pods. I'll give you the namespace and deployment — walk me through: checking pod events, reading logs, inspecting resource limits, checking liveness/readiness probes, and identifying the root cause. Give me the kubectl commands to run."
+      },
+      {
+        "id": "k8s-networking",
+        "label": "Debug networking issues",
+        "prompt": "Help me debug a Kubernetes networking issue. I'll describe the symptom — walk me through: checking service endpoints, DNS resolution, network policies, ingress configuration, and pod-to-pod connectivity. Give me specific kubectl and debug commands."
+      },
+      {
+        "id": "k8s-manifest",
+        "label": "Generate a deployment manifest",
+        "prompt": "Generate a Kubernetes deployment manifest for the service I'll describe. Include: deployment, service, HPA, resource limits, health checks, pod disruption budget, and any necessary config maps or secrets. Follow production best practices."
+      }
+    ]
+  },
+  {
+    "id": "incident-response",
+    "label": "Incident response",
+    "icon": "🔥",
+    "description": "Incident management and postmortem drafting",
+    "author": { "name": "Vienna Team" },
+    "tags": ["incident", "postmortem", "sre"],
+    "options": [
+      {
+        "id": "incident-postmortem",
+        "label": "Draft a postmortem",
+        "prompt": "Draft an incident postmortem. I'll describe what happened — generate a structured document with: summary, timeline, root cause (use 5-whys analysis), impact (users affected, duration, SLA impact), what went well, what went wrong, and action items with priorities. Use a blameless tone."
+      },
+      {
+        "id": "incident-comms",
+        "label": "Draft status page update",
+        "prompt": "Draft a status page update for an ongoing incident. I'll describe the current situation — write updates for: investigating, identified, monitoring, and resolved states. Keep each update clear, honest, and free of technical jargon."
+      },
+      {
+        "id": "incident-slo",
+        "label": "Calculate SLO impact",
+        "prompt": "Calculate the SLO impact of this incident. I'll give you the duration and affected services — calculate the error budget consumed, remaining budget for the quarter, and whether we need to pause feature work to focus on reliability."
+      }
+    ]
+  },
+  {
+    "id": "cloud-cost",
+    "label": "Analyze cloud costs",
+    "icon": "💸",
+    "description": "Cloud spend analysis and optimization",
+    "author": { "name": "Vienna Team" },
+    "tags": ["cost", "cloud", "aws", "optimization"],
+    "options": [
+      {
+        "id": "cost-anomaly",
+        "label": "Flag cost anomalies",
+        "prompt": "Analyze our cloud spend and flag anomalies. Compare this month to last month by service. Identify: unexpected increases (> 20%), idle resources, oversized instances, and unused reserved capacity. Estimate savings for each finding."
+      },
+      {
+        "id": "cost-optimize",
+        "label": "Suggest cost optimizations",
+        "prompt": "Suggest cloud cost optimizations for our infrastructure. Look at: right-sizing instances, reserved instance opportunities, spot instance candidates, storage tier optimization, and unused resources. Estimate monthly savings for each recommendation."
+      },
+      {
+        "id": "cost-forecast",
+        "label": "Forecast next month's bill",
+        "prompt": "Forecast next month's cloud bill based on current trends. Account for: growth rate, planned launches, seasonal patterns, and any known changes. Flag if we're trending above budget and suggest where to cut."
+      }
+    ]
+  }
+]
