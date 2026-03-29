@@ -1,4 +1,4 @@
 {
   "version": 1,
-  "defaults": ["linear", "devops-badge"]
+  "defaults": ["linear", "devops_badge"]
 }

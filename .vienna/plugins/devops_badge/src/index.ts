@@ -3,7 +3,7 @@ import { ProfileMenuBarIcon } from './ui/MenuBarIcon';
 import { ProfileMenuBarContent } from './ui/MenuBarContent';
 
 export const profilePlugin = definePlugin({
-  id: 'devops-badge',
+  id: 'devops_badge',
   name: 'DevOps / Platform Engineer',
   description: 'Tools for infrastructure and operations',
   icon: { text: '☁️' },
