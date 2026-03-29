@@ -22,7 +22,7 @@
       "reason": "Track incidents and infrastructure tasks with Linear"
     },
     {
-      "id": "devops_badge",
+      "id": "devops-badge",
       "requirement": "recommended",
       "reason": "Shows profile identity in menu bar"
     }
