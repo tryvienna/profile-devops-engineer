@@ -1,23 +1,59 @@
 {
   "version": 1,
   "name": "DevOps / Platform Engineer",
-  "description": "Quick actions and tools for DevOps engineers — alert triage, infrastructure as code, Kubernetes, incident response, and cost optimization.",
-  "author": { "name": "Vienna Team", "url": "https://tryvienna.com" },
-  "icon": "☁️",
-  "tags": ["devops", "platform", "kubernetes", "terraform", "sre", "cloud"],
+  "description": "Quick actions and tools for DevOps engineers \u2014 alert triage, infrastructure as code, Kubernetes, incident response, and cost optimization.",
+  "author": {
+    "name": "Vienna Team",
+    "url": "https://tryvienna.com"
+  },
+  "icon": "\u2601\ufe0f",
+  "tags": [
+    "devops",
+    "platform",
+    "kubernetes",
+    "terraform",
+    "sre",
+    "cloud"
+  ],
   "plugins": [
-    { "id": "linear", "requirement": "recommended", "reason": "Track incidents and infrastructure tasks with Linear" },
-    { "id": "profile_badge", "requirement": "recommended", "reason": "Shows the active content profile in the menu bar" }
+    {
+      "id": "linear",
+      "requirement": "recommended",
+      "reason": "Track incidents and infrastructure tasks with Linear"
+    },
+    {
+      "id": "devops-badge",
+      "requirement": "recommended",
+      "reason": "Shows profile identity in menu bar"
+    }
   ],
   "skills": [
-    { "id": "platform-ops", "requirement": "recommended" }
+    {
+      "id": "platform-ops",
+      "requirement": "recommended"
+    }
   ],
   "quickActions": [
-    { "id": "alert-triage", "requirement": "recommended" },
-    { "id": "terraform-gen", "requirement": "recommended" },
-    { "id": "k8s-debug", "requirement": "recommended" },
-    { "id": "incident-response", "requirement": "recommended" },
-    { "id": "cloud-cost", "requirement": "recommended" }
+    {
+      "id": "alert-triage",
+      "requirement": "recommended"
+    },
+    {
+      "id": "terraform-gen",
+      "requirement": "recommended"
+    },
+    {
+      "id": "k8s-debug",
+      "requirement": "recommended"
+    },
+    {
+      "id": "incident-response",
+      "requirement": "recommended"
+    },
+    {
+      "id": "cloud-cost",
+      "requirement": "recommended"
+    }
   ],
   "registries": [],
   "settings": []
